@@ -1,0 +1,95 @@
+html {
+  background-color: #a0c4ff;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#top #logo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  max-width: 48%;
+}
+
+#top #navigation {
+  display: flex;
+  max-width: 48%;
+  align-items: center;
+}
+
+#top #navigation #blog {
+  padding-top: 4rem;
+  padding-right: 2rem;
+  font: 2.5rem "Josefin Sans", "sans-serif";
+  color: #fffffc;
+}
+
+#top #navigation #contactos {
+  padding-top: 4rem;
+  padding-right: 15rem;
+  font: 2.5rem "Josefin Sans", "sans-serif";
+  color: #fffffc;
+}
+
+#logo #title {
+  padding-top: 5rem;
+  padding-left: 4rem;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fffffc;
+}
+
+#logo #name {
+  margin-top: -3rem;
+  margin-left: 11%;
+  font: 1.5rem "Lemonada";
+  color: #fffffc;
+}
+
+.box {
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 10px 2px grey;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("imagens/hammer.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  border: #fff solid 3px;
+  background: #fff;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
