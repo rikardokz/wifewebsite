@@ -74,6 +74,7 @@ html {
 .main-img img,
 .imgs img {
   width: 100%;
+  filter: saturate(50%);
 }
 
 .imgs {
